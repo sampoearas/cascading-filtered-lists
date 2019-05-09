@@ -2,21 +2,6 @@
 
 This project demonstrates how cascading filtered lists can be implemented in Aras.
 
-## Project Details
-
-See [TESTSTATUS file](./TESTSTATUS.md) for latest testing information.
-
-#### Built Using
-Aras 11.0 SP7
-
-#### Versions Tested:
-Aras 11.0 SP7, Aras 11.0 SP5 (open release)
-
-#### Browsers Tested:
-Internet Explorer 11, Firefox 38 ESR, Chrome
-
-> Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
-
 ## How It Works
 
 The project's import package adds properties and fields to the default Part ItemType/Form: `country`, `city`, and `plant`. The city property is filtered based on the selected country using the standard List - Filter List pair configuration.
@@ -24,6 +9,21 @@ The project's import package adds properties and fields to the default Part Item
 Since the Aras GUI only supports one Filter List per List out-of-the-box, we add two methods to handle the filtering logic for our third list: `plant`. The labs_PopulatePlantList method filters and populates the Plant select list when the Part form is loaded. Whenever the City field value changes, the labs_UpdatePlantList method filters and repopulates the Plant select list.
 
 The result is a filter list that appears to be filtered on a filter list.
+
+## History
+
+Release | Notes
+--------|--------
+[v1.0.1](https://github.com/ArasLabs/cascading-filtered-lists/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Tested on Edge, Firefox 60 ESR, Chrome.
+[v1.0.0](https://github.com/ArasLabs/cascading-filtered-lists/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. 
+
+#### Supported Aras Versions
+
+Project | Aras
+--------|------
+[v1.0.1](https://github.com/ArasLabs/cascading-filtered-lists/releases/tag/v1.0.1) | 10.0 SPx, 11.0 SP7+, 11.0 SP12+, 11.0 SP15
+[v1.0.0](https://github.com/ArasLabs/cascading-filtered-lists/releases/tag/v1.0.0) | 10.0 SPx, 11.0 SP7; Old Community Board Migration
+
 
 ## Installation
 
